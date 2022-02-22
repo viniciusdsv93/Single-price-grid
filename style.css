@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    min-height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+
+p {
+    font-size: 16px;
+}
+
+.container {
+    width: 85vw;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-join,
+.container-subscription,
+.container-whyus {
+    padding: 30px;
+}
+
+.container-join {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.container-join h2 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 25px;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.container-join h4 {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 12px;
+}
+
+.container-join p {
+    color: hsl(218, 22%, 67%);
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.container-subscription,
+.container-whyus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.container-subscription {
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 5px;
+}
+
+.container-subscription p {
+    opacity: 0.8;
+}
+
+.container-subscription button {
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(71, 73%, 54%);
+    padding: 14px 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.container-subscription button:hover {
+    background-color: hsl(71, 56%, 62%);
+}
+
+.container-whyus {
+    background-color: hsl(179, 47%, 52%);
+    border-bottom-right-radius: 5px;
+    gap: 20px;
+}
+
+.container-whyus p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-right: 50px;
+    opacity: 0.7;
+}
+
+.white {
+    color: #fff;
+}
+
+.subscription-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: -20px;
+}
+
+.subscription-price p {
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.attribution a {
+    color: hsl(179, 47%, 52%);
+    font-weight: 700;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+
+    .container-join,
+    .container-subscription,
+    .container-whyus {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .subscription-price {
+        margin-bottom: -10px;
+    }
+
+    .container-subscription {
+        gap: 15px;
+        border-radius: 0;
+    }
+
+    .container-whyus {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .container-subscription button {
+        margin-top: 15px;
+    }
+}
